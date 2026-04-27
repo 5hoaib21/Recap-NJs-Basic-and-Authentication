@@ -6,7 +6,7 @@ import React from "react";
 
 const Navbar = () => {
   const { data: session } = authClient.useSession();
-  console.log("session from:", session);
+  // console.log("session from:", session);
 
   const user = session?.user;
   const handleSignOut = () => {
@@ -21,6 +21,9 @@ const Navbar = () => {
       </Link>
       <Link className="font-bold text-lg" href={"/models"}>
         Models
+      </Link>
+      <Link className="font-bold text-lg" href={"/server-action"}>
+        Server Action
       </Link>
       <Link className="font-bold text-lg" href={"/signup"}>
         Sign up
