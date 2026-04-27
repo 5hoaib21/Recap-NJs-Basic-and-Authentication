@@ -3,9 +3,10 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="border p-5 bg-zinc-700 flex justify-between gap-5">
+    <div className="border p-5 bg-zinc-700 flex justify-center gap-5 text-white">
       <Link href={"/"}>Home</Link>
       <Link href={"/models"}>Models</Link>
+      <Link href={"/signup"}>Sign up</Link>
     </div>
   );
 };

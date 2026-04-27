@@ -6,7 +6,7 @@ const ModelsPage = async () => {
     next: { revalidate: 10 },
   });
   const models = await res.json();
-  console.log(models);
+  // console.log(models);
   return (
     <div>
       <h2>Models Page</h2>
